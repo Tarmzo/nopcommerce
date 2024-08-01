@@ -24,7 +24,7 @@ public class NopCommerceApp {
         webDriver.findElement(By.name("DateOfBirthDay")).sendKeys("29");
         webDriver.findElement(By.name("DateOfBirthMonth")).sendKeys("July");
         webDriver.findElement(By.name("DateOfBirthYear")).sendKeys("2017");
-        webDriver.findElement(By.id("Email")).sendKeys("cd869@malotana.com");
+        webDriver.findElement(By.id("Email")).sendKeys("cd189@malotana.com");
         webDriver.findElement(By.id("Company")).sendKeys("FLASH");
         webDriver.findElement(By.id("Password")).sendKeys("Password123");
         webDriver.findElement(By.id("ConfirmPassword")).sendKeys("Password123");
@@ -39,7 +39,7 @@ public class NopCommerceApp {
         Thread.sleep(1000);
         webDriver.findElement(By.linkText("Log in")).click();
         Thread.sleep(1000);
-        webDriver.findElement(By.id("Email")).sendKeys("cd869@malotana.com");
+        webDriver.findElement(By.id("Email")).sendKeys("cd189@malotana.com");
         webDriver.findElement(By.id("Password")).sendKeys("Password123");
 
         //ComputeTab
@@ -66,18 +66,25 @@ public class NopCommerceApp {
         webDriver.findElement(By.id("add-to-cart-button-1")).click();
         Thread.sleep(1000);
         webDriver.findElement(By.id("product_attribute_2")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         webDriver.findElement(By.id("add-to-cart-button-1")).sendKeys("label=8GB [+$60.00]");
+        Thread.sleep(1000);
         webDriver.findElement(By.cssSelector("#product_attribute_input_3 li:nth-child(2) > label")).click();
         Thread.sleep(1000);
         webDriver.findElement(By.id("price-value-1")).click();
         Thread.sleep(2000);
         webDriver.findElement(By.id("add-to-cart-button-1")).click();
-
+        Thread.sleep(2000);
         //cart
+        //toDO
 
-
-
+       /* webDriver.findElement(By.cssSelector("shopping cart")).click();
+        Thread.sleep(1000);
+        webDriver.findElement(By.cssSelector("tr:nth-child(2) .remove-btn")).click();
+        webDriver.findElement(By.cssSelector(".order-total > .cart-total-right")).click();
+        webDriver.findElement(By.id("termsofservice")).click();
+        Thread.sleep(1000);
+        webDriver.findElement(By.id("checkout")).click();*/
 
     }
 
