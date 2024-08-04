@@ -8,4 +8,7 @@
 - to startup the application(Demo) under(test - java - basics - NopCommerceApp)
 - to generate test data, i've made use of Faker
 - Validate and calculating total price - RunTotalprices (question 6)
-  dateofYear doesnt not validate at all
+
+  ## Bugs
+  * dateofYear doesnt not validate at all
+  * State / province cant be selected when doing ## shipping
